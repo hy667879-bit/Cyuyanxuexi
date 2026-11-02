@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+//2026.11.1指针4听课
 //回调函数
 //#include <stdio.h>
 //void menu()
@@ -106,10 +108,11 @@
 //{
 //	int arr[10] = { 9,8,7,6,5,4,3,2,1,0 };
 //	int sz = sizeof(arr) / sizeof(arr[0]);
-//	print_arr(arr, sz);
+//	print_arr(arr, sz);                             打印排序前
 //	qsort(arr, sz, sizeof(arr[0]),cmp_int );
-//	print_arr(arr, sz);
+//	print_arr(arr, sz);                             打印排序后
 //}
+// 结构体排序
 //struct stu
 //{
 //	char name[20];
@@ -144,13 +147,16 @@
 ////2，结构体指针->成员名
 //int main()
 //{
-//	//test();
-//	//test2();
+//	test();
+//	test2();
 //	test3();
 //	return 0;
 //}
 //
 ////强制类转换的优先级低于->的优先级
+// 
+// 
+// 
 //冒泡排序
 //void printf_arr(int arr[], int sz)
 //{
@@ -204,3 +210,58 @@
 //	qsort(arr, sz, sizeof(arr[0]),cmp_int );
 //	print_arr(arr, sz);
 //}
+
+//2026.11.2听课指针4
+//void swap(char* buf1, char* buf2, size_t width)
+//{
+//	size_t i = 0;
+//	for (i = 0;i < width;i++)
+//	{
+//		char tmp = *buf1;
+//		*buf1 = *buf2;
+//		*buf2 = tmp;
+//		buf1++;
+//		buf2++;
+//
+//	}
+//}
+//void bubble_sort2(void *base ,size_t sz ,size_t width ,int (*cmp)(const void*p1 ,const void *p2))
+//{
+//	int i = 0;
+//	for (i = 0;i < sz - 1;i++)
+//	{
+//		int j = 0;
+//		for (j = 0;j < sz - 1 - i;j++)
+//		{
+//			if (cmp((char*)base + j * width, (char*)base + (j + 1) * width) > 0)
+//			{
+//				swap((char*)base + j * width, (char*)base + (j + 1) * width, width);
+//			}
+//		}
+//	}
+//}
+//void test4()
+//{
+//	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print_arr(arr, sz);                             //打印排序前
+//	bubble_sort2(arr, sz, sizeof(arr[0]),cmp_int );
+//	print_arr(arr, sz);                             //打印排序后
+//}
+//void test5()
+//{
+//	struct stu arr[] = { { "hu",18 },{ "xin",25 },{ "zhi",15 } };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	bubble_sort2(arr, sz, sizeof(arr[0]), cmp_stu_by_age);
+//	bubble_sort2(arr, sz, sizeof(arr[0]), cmp_stu_by_name);         //未写入打印函数可用调试观察
+//}
+//
+//int main()
+//{
+//	test4();
+//	test5();
+//	return 0;
+//}
+
+
+//指针六 part3  2026.11.3
