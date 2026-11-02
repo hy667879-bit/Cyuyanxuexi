@@ -1,0 +1,9 @@
+﻿  zhizhen5.cpp
+D:\vscode\test_cc\zhizhen5\zhizhen5\zhizhen5.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\vscode\test_cc\zhizhen5\zhizhen5\zhizhen5.cpp(138,9): warning C4477: “printf”: 格式字符串“%S”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“char *”
+      D:\vscode\test_cc\zhizhen5\zhizhen5\zhizhen5.cpp(138,9):
+      请考虑在格式字符串中使用“%hS”
+      D:\vscode\test_cc\zhizhen5\zhizhen5\zhizhen5.cpp(138,9):
+      请考虑在格式字符串中使用“%TS”
+  
+D:\vscode\test_cc\zhizhen5\zhizhen5\zhizhen5.cpp(125,1): error C4716: “cmp_stu_by_name”: 必须返回一个值
